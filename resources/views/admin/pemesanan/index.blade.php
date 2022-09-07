@@ -1,5 +1,23 @@
 @extends("layouts.admin.main",["active"=>"Pemesanan"])
+@section("head")
+<div class="px-[24px]">
+    <div class="mt-[40px] ">
+        <div
+            class="border-2 border-l-[37px]  border-red-500 rounded-[10px] py-[24px] px-[32px] flex flex-col md:flex-row items-center gap-[24px] md:gap-[74px] max-w-[885px] ">
+            <h5 class="h5 text-primary"> 4 Tanaman sedang menunggu untuk dikirim, yuk lakukan pengiriman</h5>
+            <a href="/admin/pemesanan/daftar-pengiriman"
+                class=" text-end text-[#28B67E] font-medium flex items-center justify-end ">
+                <span class="whitespace-nowrap">Ke pengiriman</span>
+                <span class="mi ml-2 text-[#28B67E]">
+                    arrow_forward
+                </span>
+            </a>
+        </div>
 
+    </div>
+
+</div>
+@endsection
 @section("content")
 <div class="px-[24px]">
     <div class="flex justify-between flex-col md:flex-row ">
@@ -60,18 +78,7 @@
         </table>
     </div>
 
-    <div class="mt-[40px] max-w-[357px]">
-        <h5 class="h5 text-primary"> 4 Tanaman sedang menunggu untuk dikirim, yuk lakukan pengiriman</h5>
-    </div>
-    <div class="mt-[40px] max-w-[357px] ">
-        <a href="/admin/pemesanan/daftar-pengiriman"
-            class="w-full text-end text-[#28B67E] font-medium flex items-center justify-end ">
-            <span>Ke pengiriman</span>
-            <span class="mi ml-2 text-[#28B67E]">
-                arrow_forward
-            </span>
-        </a>
-    </div>
+
     <div class="mt-[40px] invisible" id="modal">
         <div class="fixed inset-0 bg-gray-5 bg-opacity-75 transition-opacity"></div>
         <div class="fixed z-10 inset-0 overflow-y-auto ">

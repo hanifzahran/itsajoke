@@ -51,12 +51,14 @@
                             Rp 120.000
                         </p>
                     </div>
-                    <div class="mt-[40px] w-full flex justify-end">
+                    <a href="/product/progress-pemesanan" class="mt-[40px] w-full flex justify-end">
+
                         <button
                             class="button font-md bg-primary  text-white rounded-[10px] py-1 w-full md:max-w-[228px]">
                             Lihat detail
                         </button>
-                    </div>
+
+                    </a>
                 </div>
                 <div class="flex justify-between py-[40px] px-[24px] rounded-[10px] mt-[40px] flex-wrap "
                     style="box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);">
@@ -76,12 +78,14 @@
                             Rp 120.000
                         </p>
                     </div>
-                    <div class="mt-[40px] w-full flex justify-end">
+                    <a href="/product/progress-pemesanan" class="mt-[40px] w-full flex justify-end">
+
                         <button
                             class="button font-md bg-primary  text-white rounded-[10px] py-1 w-full md:max-w-[228px]">
                             Lihat detail
                         </button>
-                    </div>
+
+                    </a>
                 </div>
 
             </div>

@@ -93,7 +93,7 @@
         -moz-appearance:textfield;
     }
 
-    .pesan-done{
+    .pesanan-done{
      @apply w-[73px] h-[73px] flex justify-center items-center font-lg  bg-primary rounded-full text-white font-bold flex-shrink-0
     }
 

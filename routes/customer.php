@@ -25,9 +25,34 @@ Route::get('/product/pembayaran', function () {
     
     return view('customer.product.pembayaran');
 });
+
 Route::get('/product/progress-pemesanan', function () {
     
-    return view('customer.product.progress_pemesanan');
+    $done = intval(request()->done);
+    if($done == 0){
+        $done = 1;
+    }
+
+
+    $getClassPesanan = function($val) use ($done){
+        if($done >= $val){
+            return "pesanan-done";
+        }else if($done + 1 == $val){
+            return "pesanan-progress";
+        }else{
+            return "pesanan-pending";
+        }
+    };
+
+    $data['getClassPesanan'] = $getClassPesanan;
+
+
+    return view('customer.product.progress_pemesanan',$data);
+});
+
+Route::get('/product/progress-pemesanan-2', function () {
+    
+    return view('customer.product.progress_pemesanan_2');
 });
 
 Route::get('/product/konfirmasi-perawatan', function () {

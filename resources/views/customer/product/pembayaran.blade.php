@@ -21,13 +21,18 @@
         </div>
 
         <div class="flex items-end flex-col gap-[32px] mt-[96px]">
-            <button
-                class="button font-lg-responsive bg-primary  text-white rounded-[10px] py-[19px] w-full md:w-[511px]">
-                Bayar via Cash On Delivery
-            </button>
-            <button class="button font-lg-responsive bg-orange text-white rounded-[10px] py-[19px] w-full md:w-[511px]">
-                Selesai Pembayaran
-            </button>
+            <a href="/product/progress-pemesanan">
+                <button
+                    class="button font-lg-responsive bg-primary  text-white rounded-[10px] py-[19px] w-full md:w-[511px]">
+                    Bayar via Cash On Delivery
+                </button>
+            </a>
+            <a href="/product/progress-pemesanan">
+                <button
+                    class="button font-lg-responsive bg-orange text-white rounded-[10px] py-[19px] w-full md:w-[511px]">
+                    Selesai Pembayaran
+                </button>
+            </a>
 
         </div>
     </div>

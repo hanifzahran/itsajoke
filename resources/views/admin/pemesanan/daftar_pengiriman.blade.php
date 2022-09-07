@@ -6,7 +6,7 @@
         <span class="material-symbols-outlined">
             keyboard_backspace
         </span>
-        <span>Kembali</span>
+        <span class="ml-2">Kembali</span>
     </a>
 </div>
 @endsection
@@ -55,8 +55,9 @@
                         2
                     </td>
                     <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#27AE60] rounded-[10px] w-[101px] text-center">
-                            Sudah</p>
+                        <p class="px-4 py-1 font-semibold text-white bg-[#EB5757] rounded-[10px] w-[101px] text-center">
+                            Belum
+                        </p>
                     </td>
                     <td class="text-center open-modal" data-url-submit="{{url("/konfirmasi-tanaman")}}">
                         <span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80">
@@ -77,7 +78,8 @@
                     </td>
                     <td>
                         <p class="px-4 py-1 font-semibold text-white bg-[#EB5757] rounded-[10px] w-[101px] text-center">
-                            Sudah</p>
+                            Belum
+                        </p>
                     </td>
                     <td class="text-center open-modal" data-url-submit="{{url("/konfirmasi-tanaman")}}">
                         <span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80">
@@ -97,8 +99,9 @@
                         10
                     </td>
                     <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#27AE60] rounded-[10px] w-[101px] text-center">
-                            Sudah</p>
+                        <p class="px-4 py-1 font-semibold text-white bg-[#EB5757] rounded-[10px] w-[101px] text-center">
+                            Belum
+                        </p>
                     </td>
                     <td class="text-center open-modal" data-url-submit="{{url("/konfirmasi-tanaman")}}">
                         <span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80">
@@ -118,7 +121,8 @@
                         1
                     </td>
                     <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#E2B93B] rounded-[10px] w-[101px]  ">Berjalan
+                        <p class="px-4 py-1 font-semibold text-white bg-[#27AE60] rounded-[10px] w-[101px] text-center">
+                            Sudah
                         </p>
                     </td>
                     <td class="text-center open-modal" data-url-submit="{{url("/konfirmasi-tanaman")}}">
@@ -131,6 +135,10 @@
 
             </tbody>
         </table>
+
+        <div class="text-end">
+            <p class="text-gray-4 mt-[19px]">*Tekan aksi untuk konfirmasi pengiriman</p>
+        </div>
     </div>
 
     <div class="mt-[40px] hidden" id="modal">

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{ url('/css/app.css') }}">
-    <link rel="stylesheet" href="{{ url('/css/custom.css') }}">
+    <link rel="stylesheet" href="{{url('/css/app.css')}}">
+    <link rel="stylesheet" href="{{url('/css/custom.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/core-images/logo-small.png">
     <title>Setanam</title>
@@ -24,33 +24,25 @@
                     <img src="/core-images/logo.png" alt="" class="order-1 md:order-2">
                 </div>
 
-                @if($errors->any())
-                    {!! implode('', $errors->all('<div>:message</div>')) !!}
-                @endif
 
-                <form action="{{ route('admin.login_admin.post') }}" method="POST" >
-                    @csrf
-                    <div class="mt-[40px] w-full flex-shrink-0">
-                        <label for="" class="text-gray-2 text-lg">Email</label>
-                        <input type="email" id="email" name="email"
-                            class="rounded-[10px] border border-gray-4  text-lg p-2 mt-2 focus:outline-none hover:border-warning w-full" />
-                    </div>
-                    <div class="mt-[40px] w-full flex-shrink-0">
-                        <label for="" class="text-gray-2 text-lg">Password</label>
-                        <input type="password" id="password" name="password"
-                            class="rounded-[10px] border border-gray-4  text-lg p-2 mt-2 focus:outline-none hover:border-warning w-full" />
-                    </div>
-                    <div class="mt-[40px] w-full flex-shrink-0">
-                        <button type="submit"
-                            class="button font-lg-responsive bg-primary  text-white rounded-[10px] py-[10px] w-full ">
-                            Login
-                        </button>
-                    </div>
-                    <div class="mt-[40px] w-full flex justify-center flex-g">
-                        <p class="mr-[24px]">Tidak bisa login?</p> <a href="/register" class="text-orange">Hubungi
-                            CS</a>
-                    </div>
-                </form>
+                <div class="mt-[40px] w-full flex-shrink-0">
+                    <label for="" class="text-gray-2 text-lg">Username</label>
+                    <input type="text"
+                        class="rounded-[10px] border border-gray-4  text-lg p-2 mt-2 focus:outline-none hover:border-warning w-full" />
+                </div>
+                <div class="mt-[40px] w-full flex-shrink-0">
+                    <label for="" class="text-gray-2 text-lg">Username</label>
+                    <input type="text"
+                        class="rounded-[10px] border border-gray-4  text-lg p-2 mt-2 focus:outline-none hover:border-warning w-full" />
+                </div>
+                <div class="mt-[40px] w-full flex-shrink-0">
+                    <button class="button font-lg-responsive bg-primary  text-white rounded-[10px] py-[10px] w-full ">
+                        Login
+                    </button>
+                </div>
+                <div class="mt-[40px] w-full flex justify-center flex-g">
+                    <p class="mr-[24px]">Tidak bisa login?</p> <a href="/register" class="text-orange">Hubungi CS</a>
+                </div>
             </div>
         </div>
     </main>
@@ -58,7 +50,7 @@
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
 
-    @yield('script')
+    @yield("script")
 </body>
 
 </html>

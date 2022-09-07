@@ -1,5 +1,16 @@
 @extends("layouts.admin.main",["active"=>"Beranda"])
 
+@section("head")
+<div class="px-[24px]">
+    <a href="/admin" class="flex items-center">
+        <span class="material-symbols-outlined">
+            keyboard_backspace
+        </span>
+        <span class="ml-2">Kembali</span>
+    </a>
+</div>
+@endsection
+
 @section("content")
 <div class="px-[24px]">
     <div class=" ">

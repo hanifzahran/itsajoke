@@ -1,39 +1,6 @@
 <?php
-
 use Illuminate\Http\Request;
-use App\Http\Controllers\Auth\LoginController;
 
-//GROUP ADMIN UNTUK LOGIN DOANG
-Route::group(['prefix' => 'admin'], function () {
-    Route::get('/login', 'App\Http\Controllers\Admin\LoginController@showLoginForm')->name('admin.login_admin');
-    Route::post('/login', 'App\Http\Controllers\Admin\LoginController@login')->name('admin.login_admin.post');
-    Route::get('logout', 'App\Http\Controllers\Admin\LoginController@logout')->name('admin.logout');
-    Route::group(['middleware' => ['auth:admin']], function () {
-        Route::get('/', function () {
-            return view('admin.beranda.index');
-        })->name('admin.beranda');
-        //pattern untuk settings di POV admin kek secara general
-        //Route::get('/settings', 'App\Http\Controllers\Admin\SettingController@index')->name('admin.settings');
-        //Route::post('/settings', 'App\Http\Controllers\Admin\SettingController@update')->name('admin.settings.update');
-    });
-});
-
-
-//Grouping untuk categories nanti
-/*
-Route::group(['prefix'  =>   'categories'], function () {
-
-    Route::get('/', 'Admin\CategoryController@index')->name('admin.categories.index');
-    Route::get('/create', 'Admin\CategoryController@create')->name('admin.categories.create');
-    Route::post('/store', 'Admin\CategoryController@store')->name('admin.categories.store');
-    Route::get('/{id}/edit', 'Admin\CategoryController@edit')->name('admin.categories.edit');
-    Route::post('/update', 'Admin\CategoryController@update')->name('admin.categories.update');
-    Route::get('/{id}/delete', 'Admin\CategoryController@delete')->name('admin.categories.delete');
-});
-*/
-
-
-/*
 Route::prefix('admin')->group(function () {
 
     Route::get('/', function () {
@@ -122,11 +89,29 @@ Route::prefix('admin')->group(function () {
             return view('admin.perawatan.index');
         });
         Route::get('/detail', function () {
-            return view('admin.perawatan.detail');
+            $data = [
+                "nama_penyewa" => "Sutarman P",
+                "alamat_penyewa" => "Jl. Taman Anggrek No 16, Cakung, Jakarta Timur RT 01 / RW 02 52181",
+                "layanan_perawatan" => "Penyiraman tanaman",
+                "jumlah_perawatan1" => "2 kali seminggu",
+                "jumlah_perawatan2" => "4 minggu",
+            ];
+
+            if(request()->id){
+                $data = [
+                    "nama_penyewa" => "David Alexander",
+                    "alamat_penyewa" => "Jl. Jend Sudirman No 1, Kebon Jati, Jakarta Timur RT 05 / RW 05 50989",
+                    "layanan_perawatan" => "Penyiraman tanaman",
+                    "jumlah_perawatan1" => "2 kali seminggu",
+                    "jumlah_perawatan2" => "3 minggu",
+                ];
+            }
+
+
+            return view('admin.perawatan.detail',$data);
         });
     });
 
   
 
 });
-*/

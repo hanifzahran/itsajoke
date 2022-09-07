@@ -43,8 +43,9 @@
                         2
                     </td>
                     <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#27AE60] rounded-[10px] w-[101px] text-center">
-                            Sudah</p>
+                        <p class="px-4 py-1 font-semibold text-white bg-[#E2B93B] rounded-[10px] w-[101px]  ">
+                            Berjalan
+                        </p>
                     </td>
                     <td class="text-center">
                         <a href="/admin/perawatan/detail">
@@ -66,31 +67,10 @@
                         1
                     </td>
                     <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#EB5757] rounded-[10px] w-[101px] text-center">
-                            Sudah</p>
-                    </td>
-                    <td class="text-center">
-                        <a href="/admin/perawatan/detail">
-                            <span class="material-symbols-outlined text-primary">
-                                play_arrow
-                            </span>
-                        </a>
-                    </td>
-                </tr>
-                <tr class="border-b border-gray-5 ">
-                    <td class="p-4 font-bold text-primary">
-                        Monstera
-                    </td>
+                        <p class="px-4 py-1 font-semibold text-white bg-[#E2B93B] rounded-[10px] w-[101px]  ">
+                            Berjalan
+                        </p>
 
-                    <td class="p-4 font-bold text-start text-primary">
-                        Sutarman P
-                    </td>
-                    <td class="p-4 font-bold text-center text-gray-3">
-                        10
-                    </td>
-                    <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#27AE60] rounded-[10px] w-[101px] text-center">
-                            Sudah</p>
                     </td>
                     <td class="text-center">
                         <a href="/admin/perawatan/detail">
@@ -112,7 +92,9 @@
                         1
                     </td>
                     <td>
-                        <p class="px-4 py-1 font-semibold text-white bg-[#E2B93B] rounded-[10px] w-[101px]  ">Berjalan
+
+                        <p class="px-4 py-1 font-semibold text-white bg-[#EB5757] rounded-[10px] w-[101px] text-center">
+                            Belum
                         </p>
                     </td>
                     <td class="text-center">
@@ -123,8 +105,36 @@
                         </a>
                     </td>
                 </tr>
+                <tr class="border-b border-gray-5 ">
+                    <td class="p-4 font-bold text-primary">
+                        Alocasia
+                    </td>
+
+                    <td class="p-4 font-bold text-start text-primary">
+                        David Alexander
+                    </td>
+                    <td class="p-4 font-bold text-center text-gray-3">
+                        1
+                    </td>
+                    <td>
+                        <p class="px-4 py-1 font-semibold text-white bg-[#27AE60] rounded-[10px] w-[101px] text-center">
+                            Sudah
+                        </p>
+                    </td>
+                    <td class="text-center">
+                        <a href="/admin/perawatan/detail?id=1">
+                            <span class="material-symbols-outlined text-primary">
+                                play_arrow
+                            </span>
+                        </a>
+                    </td>
+                </tr>
             </tbody>
         </table>
+
+        <div class="text-end">
+            <p class="text-gray-4 mt-[19px]">*Tekan aksi untuk lihat detail perawatan</p>
+        </div>
     </div>
 
 </div>
